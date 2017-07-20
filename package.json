@@ -1,0 +1,23 @@
+{
+  "name": "landing-kit",
+  "version": "1.0.0",
+  "description": "tool to initialize dev environnement for static landing page.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devOups/landing-kit.git"
+  },
+  "keywords": [
+    "landing-page",
+    "starter"
+  ],
+  "author": "quentin saieb (devOups)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devOups/landing-kit/issues"
+  },
+  "homepage": "https://github.com/devOups/landing-kit#readme"
+}
