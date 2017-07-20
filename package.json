@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/devOups/landing-kit/issues"
   },
-  "homepage": "https://github.com/devOups/landing-kit#readme"
+  "homepage": "https://github.com/devOups/landing-kit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0"
+  }
 }
