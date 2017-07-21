@@ -21,8 +21,17 @@
   },
   "homepage": "https://github.com/devOups/landing-kit#readme",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-if": "^2.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^2.0.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
   }
 }
