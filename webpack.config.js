@@ -1,12 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/scripts/app.js',
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(), // Enable HMR
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ],
 
   output: {
@@ -22,14 +26,18 @@ module.exports = {
   },
 
   module: {
-    rules: [
+    loaders: [
     //   {
     //     test: /\.css$/,
     //     use: [ 'style-loader', 'css-loader' ]
-    //   }, 
+    //   },
       {
           test: /\.scss$/,
-          use: [ 'style-loader', 'css-loader' , 'sass-loader']
+          loaders: [ 'style-loader', 'css-loader' , 'sass-loader']
+      },
+      {
+          test: /\.html$/,
+          loader: 'html-loader'
       }
     ]
   }
